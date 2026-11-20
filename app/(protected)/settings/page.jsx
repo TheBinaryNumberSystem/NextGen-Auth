@@ -72,7 +72,14 @@ const SettingsPage = () => {
     }
   }, [success]);
 
+  const clearError = () => {
+    if (error) setError(undefined);
+  };
+
   const onSubmit = (values) => {
+    setError(undefined);
+    setSuccess(undefined);
+
     startTransition(() => {
       settings(values)
         .then((data) => {
@@ -117,6 +124,12 @@ const SettingsPage = () => {
                         {...field}
                         placeholder="Abhishek Goswami"
                         disabled={isPending}
+                        onFocus={clearError}
+                        onClick={clearError}
+                        onChange={(e) => {
+                          clearError();
+                          field.onChange(e);
+                        }}
                       />
                     </FormControl>
                     <FormMessage />
@@ -137,6 +150,12 @@ const SettingsPage = () => {
                             placeholder="abhishek.goswami@example.com"
                             type="email"
                             disabled={isPending}
+                            onFocus={clearError}
+                            onClick={clearError}
+                            onChange={(e) => {
+                              clearError();
+                              field.onChange(e);
+                            }}
                           />
                         </FormControl>
                         <FormMessage />
@@ -157,6 +176,12 @@ const SettingsPage = () => {
                               type={showCurrentPassword && field.value ? "text" : "password"}
                               className="pr-10"
                               disabled={isPending}
+                              onFocus={clearError}
+                              onClick={clearError}
+                              onChange={(e) => {
+                                clearError();
+                                field.onChange(e);
+                              }}
                             />
                             <button
                               type="button"
@@ -191,6 +216,12 @@ const SettingsPage = () => {
                               type={showNewPassword && field.value ? "text" : "password"}
                               className="pr-10"
                               disabled={isPending}
+                              onFocus={clearError}
+                              onClick={clearError}
+                              onChange={(e) => {
+                                clearError();
+                                field.onChange(e);
+                              }}
                             />
                             <button
                               type="button"
@@ -221,11 +252,17 @@ const SettingsPage = () => {
                     <FormLabel>Role</FormLabel>
                     <Select
                       disabled={isPending}
-                      onValueChange={field.onChange}
+                      onValueChange={(val) => {
+                        clearError();
+                        field.onChange(val);
+                      }}
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full h-10 rounded-xl bg-background/50 px-3 py-2 cursor-pointer">
+                        <SelectTrigger
+                          onClick={clearError}
+                          className="w-full h-10 rounded-xl bg-background/50 px-3 py-2 cursor-pointer"
+                        >
                           <SelectValue placeholder="Select a role" />
                         </SelectTrigger>
                       </FormControl>
@@ -254,7 +291,10 @@ const SettingsPage = () => {
                         <Switch
                           disabled={isPending}
                           checked={field.value}
-                          onCheckedChange={field.onChange}
+                          onCheckedChange={(val) => {
+                            clearError();
+                            field.onChange(val);
+                          }}
                         />
                       </FormControl>
                     </FormItem>
