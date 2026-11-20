@@ -1,8 +1,10 @@
-# NextGen Auth.js (Pure JavaScript)
+# NextGen Auth.js (with JavaScript)
 
-A modern, production-grade full-stack authentication system built with **Next.js 16 (App Router)**, **Auth.js v5 (Next-Auth)**, **Prisma ORM**, **Neon Serverless Postgres**, **Tailwind CSS v4**, and **Nodemailer**. 
+A modern, production-grade full-stack authentication system built with **Next.js 16 (App Router)**, **Auth.js v5 (Next-Auth)**, **Prisma ORM**, **Neon Serverless Postgres**, **Tailwind CSS v4**, and **Nodemailer**.
 
 Written entirely in **pure JavaScript** (`.js`, `.jsx`).
+
+> 💡 **Looking for TypeScript?** An identical version written in full TypeScript is also available: [**NextGen_Auth.js (TypeScript Edition)**](https://github.com/TheBinaryNumberSystem/NextGen_Auth.js)
 
 ---
 
@@ -43,6 +45,7 @@ Follow these step-by-step instructions to get the application running on your lo
 ### 1. Prerequisites
 
 Ensure you have the following installed on your machine:
+
 - **Node.js**: `v18.18.0` or higher (Node.js 20+ recommended)
 - **npm**: `v9.0.0` or higher (or `pnpm` / `yarn`)
 - A free **[Neon Postgres](https://neon.tech)** account (or local PostgreSQL instance)
@@ -138,7 +141,7 @@ npx prisma db push
 npx prisma generate
 ```
 
-*(Optional)* Launch Prisma Studio to inspect and manage your database visually:
+_(Optional)_ Launch Prisma Studio to inspect and manage your database visually:
 
 ```bash
 npx prisma studio
@@ -155,6 +158,7 @@ npm run dev
 ```
 
 Open your browser and navigate to:
+
 ```
 http://localhost:3000
 ```
@@ -221,6 +225,19 @@ npm run start
 
 ---
 
+## 🔷 TypeScript Edition
+
+If you prefer static type safety and explicit type definitions, the identical architecture and feature set are also available in a complete **TypeScript** implementation:
+
+👉 **[NextGen_Auth.js (TypeScript Edition)](https://github.com/TheBinaryNumberSystem/NextGen_Auth.js)**
+
+| Edition | Language Stack | Repository Link |
+| :--- | :--- | :--- |
+| 🟨 **JavaScript Edition** (Current) | Pure JavaScript (`.js`, `.jsx`) | [TheBinaryNumberSystem/NextGen-Auth.js-JS](https://github.com/TheBinaryNumberSystem/NextGen-Auth.js-JS) |
+| 🟦 **TypeScript Edition** | Full TypeScript (`.ts`, `.tsx`) | [TheBinaryNumberSystem/NextGen_Auth.js](https://github.com/TheBinaryNumberSystem/NextGen_Auth.js) |
+
+---
+
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+Not required. Just go on 😂.
