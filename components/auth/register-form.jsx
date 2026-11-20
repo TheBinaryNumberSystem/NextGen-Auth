@@ -111,7 +111,7 @@ export const RegisterForm = () => {
                     <Input
                       {...field}
                       disabled={isPending}
-                      placeholder="abhishek@mail.in"
+                      placeholder="abhishek.goswami@example.in"
                       type="email"
                       onFocus={clearError}
                       onClick={clearError}

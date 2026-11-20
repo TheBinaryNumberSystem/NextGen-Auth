@@ -145,7 +145,7 @@ export const LoginForm = () => {
                         <Input
                           {...field}
                           disabled={isLoading}
-                          placeholder="john.doe@example.com"
+                          placeholder="abhishek.goswami@example.in"
                           type="email"
                           onFocus={clearError}
                           onClick={clearError}
