@@ -199,10 +199,12 @@ npm run start
 
 ## 🟨 JavaScript Edition
 
+Build this application in both TypeScript and JavaScript. Find them from their original repo.
+
 | Edition | Language Stack | Repository Link |
 | :--- | :--- | :--- |
-| 🟦 **TypeScript Edition** (Current) | TypeScript (`.ts`, `.tsx`) | [TheBinaryNumberSystem/NextGen-Auth.js-TS](https://github.com/TheBinaryNumberSystem/NextGen-Auth.js-TS) |
-| 🟨 **JavaScript Edition** | Pure JavaScript (`.js`, `.jsx`) | [TheBinaryNumberSystem/NextGen-Auth.js-JS](https://github.com/TheBinaryNumberSystem/NextGen-Auth.js-JS) |
+| 🟨 **JavaScript Edition** | Pure JavaScript (`.js`, `.jsx`) | https://github.com/TheBinaryNumberSystem/NextGen-Auth.js-JS |
+| 🟦 **TypeScript Edition** | Full TypeScript (`.ts`, `.tsx`) | https://github.com/TheBinaryNumberSystem/NextGen-Auth.js-TS |
 
 ---
 
