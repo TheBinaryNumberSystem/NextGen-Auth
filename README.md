@@ -227,14 +227,12 @@ npm run start
 
 ## 🔷 TypeScript Edition
 
-If you prefer static type safety and explicit type definitions, the identical architecture and feature set are also available in a complete **TypeScript** implementation:
-
-👉 **[NextGen_Auth.js (TypeScript Edition)](https://github.com/TheBinaryNumberSystem/NextGen_Auth.js)**
+Build this application in both TypeScript and JavaScript.
 
 | Edition | Language Stack | Repository Link |
 | :--- | :--- | :--- |
-| 🟨 **JavaScript Edition** (Current) | Pure JavaScript (`.js`, `.jsx`) | [TheBinaryNumberSystem/NextGen-Auth.js-JS](https://github.com/TheBinaryNumberSystem/NextGen-Auth.js-JS) |
-| 🟦 **TypeScript Edition** | Full TypeScript (`.ts`, `.tsx`) | [TheBinaryNumberSystem/NextGen_Auth.js](https://github.com/TheBinaryNumberSystem/NextGen_Auth.js) |
+| 🟨 **JavaScript Edition** (Current) | Pure JavaScript (`.js`, `.jsx`) | https://github.com/TheBinaryNumberSystem/NextGen-Auth.js-JS |
+| 🟦 **TypeScript Edition** | Full TypeScript (`.ts`, `.tsx`) | https://github.com/TheBinaryNumberSystem/NextGen-Auth.js-TS |
 
 ---
 
