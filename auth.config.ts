@@ -7,6 +7,7 @@ import { LoginSchema } from "@/schemas";
 import { getUserByEmail } from "@/data/user";
 
 export default {
+  trustHost: true,
   providers: [
     Google({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -15,6 +16,7 @@ export default {
     Github({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      issuer: "https://github.com/login/oauth",
     }),
     Credentials({
       async authorize(credentials) {
